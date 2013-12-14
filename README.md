@@ -74,7 +74,7 @@ $(document).ready(function(){
 }); 
 ```
 
-## Demos ##
+## Demo ##
 
 * [coming soon](#)
 
