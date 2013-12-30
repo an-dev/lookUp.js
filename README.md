@@ -16,7 +16,7 @@ $(document).ready(function(){
 ```
 
 ```html
-<form id="MyForm">
+<form id="myform">
   <input type="text" value="here's default value" />
   <input type="submit" value="save" />
 </form>
