@@ -39,14 +39,12 @@
             }
 
             function eventhandler(){
-
                 if(window.attachEvent){
                     window.attachEvent('onbeforeunload', beforeunload);
                 }
                 else if(window.addEventListener){
                     window.addEventListener('beforeunload', beforeunload, false);
                 }
-
             }
 
             function beforeunload(e) {
