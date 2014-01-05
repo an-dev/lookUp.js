@@ -39,12 +39,14 @@
             }
 
             function eventhandler(){
+
                 if(window.attachEvent){
                     window.attachEvent('onbeforeunload', beforeunload);
                 }
                 else if(window.addEventListener){
-                    window.addEventListener('beforeunload', beforeunload, true);
+                    window.addEventListener('beforeunload', beforeunload, false);
                 }
+
             }
 
             function beforeunload(e) {
@@ -66,6 +68,9 @@
                     }
                     return e.returnValue;
                 }
+            }
+            if (opt.windowEvent){
+                opt.handle = eventhandler();
             }
             opt.handle();
         },

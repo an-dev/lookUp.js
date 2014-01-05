@@ -3,8 +3,11 @@
 
 This jQuery plugin is used to control various element in a form. When the end user changes values of input elements, the plugin shows which element where changed, and alerts the user that he has to submit the changes before doing other actions (e.g.: move out of the page)
 
-Tested in Firefox 3+, Google Chrome 10+, Safari 5+, Internet Explorer 8+.
+Tested in Firefox 4+, Google Chrome 10+, Safari 5+, Internet Explorer 8+.
 
+## Version 1.1 ##
+
+Fixed bug in windowEvent: now the plugin catches changes in the form without needing to submit data at first
 
 
 ## Usage ##
