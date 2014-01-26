@@ -6,9 +6,6 @@
                 changeClass: "changed", //class to append to changed elements
                 msg: "Unsaved changes will be lost.\n Continue?", //confirm message for changed values
                 windowEvent: false, //enable/disable window event handling, by default disabled
-                handle: function() {
-                    simplehandler()              
-                }
             }, opt || {});
 
             var fs = $(this);
@@ -58,7 +55,7 @@
                 if (changed) {
                     e = e || window.event;
                     if (opt.windowEvent){
-                        opt.handle = eventhandler();
+                        //opt.handle = eventhandler();
                         e.returnValue = opt.msg;
                     }
                     else{
@@ -68,9 +65,11 @@
                 }
             }
             if (opt.windowEvent){
-                opt.handle = eventhandler();
+                eventhandler();
             }
-            opt.handle();
+            else{
+                simplehandler();
+            }
         },
         lookUp_save: function () {
             var node = $(this);
