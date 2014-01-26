@@ -1,71 +1,197 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lookup.js by an-dev</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Lookup.js</h1>
-        <p>a jQuery plugin to control various element in a form</p>
-
-        <p class="view"><a href="https://github.com/an-dev/lookUp.js">View the Project on GitHub <small>an-dev/lookUp.js</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/an-dev/lookUp.js/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/an-dev/lookUp.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/an-dev/lookUp.js">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/an-dev">an-dev</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lookUp.Js</title>
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/modernizr.js"></script>
+</head>
+<body>
+  <header class="row">
+    <div class="small-9 small-centered columns">
+      <h1 id='logo'><i class="fa fa-bolt"></i>lookUp.js!</h1>
+      <h3>A simple plugin to check the status of your forms.<br/></h3>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  </header>
+  <main class="small-12">
+    <section id='what'>
+      <div>
+        <h4><strong>What is it?</strong></h4>
+        <p class="small-9 small-centered columns">
+          A simple jQuery plugin used to check input values, showing which elements where changed, and alerting the user that he has to submit the changes before doing other actions (e.g.: move out of the page)
+        </p>
+      </div>
+    </section>
+    <section id='how'>
+      <h4><strong>How does it work?</strong></h4>
+      <div class="small-9 small-centered columns">
+        <p>
+          Here are few examples in which you may want to use lookUp.js and avoid stressing yourself too much.
+          <br />
+          Unless you're a Hardcore Javascript Ninja Master
+          (or you like stress).
+        </p>
+      </div>
+    </section>
+    <hr/>
+    <section>
+      <h4>Custom message</h4>
+      <form id='simple' method='post' action='index.html'> 
+        <div class="row">
+          <div class="row collapse">
+            <div class="small-3 columns">
+              <span class="prefix radius">Field 1</span> 
+            </div>
+            <div class="small-9 columns">
+              <input type="text" name='f1' placeholder="Lorem Ipsum...">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-3 columns">
+              <span class="prefix radius">Field 2</span> 
+            </div>
+            <div class="small-9 columns">
+              <input type="text" name='f2' placeholder="Lorem Ipsum...">
+            </div>
+          </div>
+          <div class="row">
+            <div id='simple-panel' class='large-9 small-6 columns'></div>
+            <div class='large-3 small-6 right columns'>
+              <input type='button' value='Save' id='save-simple' class="button radius small-12 large-5" />
+              <input type='submit' value='Submit' class="button radius small-12 large-6 right" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <hr/>
+    <section>
+      <h4>Custom class for changed elements</h4>
+      <form id='more' method='post' action='index.html'>
+        <div class="row collapse">
+          <div class="large-12 columns">
+            <input type="text" placeholder="Stuff" />
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="large-4 columns">
+            <input type="text" placeholder="More Stuff" />
+          </div>
+          <div class="large-4 columns">
+            <input type="text" placeholder="Even moar Stuff" />
+          </div>
+          <div class="large-4 columns">
+            <input type="text" placeholder="Last" />
+          </div>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="large-12 columns">
+          <select>
+            <option value="hank">Hank</option>
+            <option value="dale">Dale</option>
+            <option value="boomhauer">Boomhauer</option>
+            <option value="bill">Bill</option>
+          </select>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="large-4 small-6 columns">
+          <label>Choose Your Favorite</label>
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed">
+          <label for="pokemonRed">pokemonRed</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+          <label for="pokemonBlue">pokemonBlue</label>
+        </div>
+        <div class="large-3 small-6 columns">
+          <label>Check 'em</label>
+          <input id="checkbox1" type="checkbox">
+          <label for="checkbox1">Doubles</label>
+          <input id="checkbox2" type="checkbox">
+          <label for="checkbox2">Triples</label>
+        </div>
+        <div class='large-5 small-12 columns'>
+          <input type='submit' value='Submit' class="button radius small-6 large-6 right" />
+          <div id='more-panel' class='small-5 large-5 columns'></div>
+        </div>
+      </div>        
+    </form>
+  </section>
+  <hr/>
+  <section>
+    <h4>Window Event enabled</h4>
+    <form id='fb' method='post' action='index.html'>
+      <div class="row collapse">
+        <div class="small-2 columns">
+          <span class="prefix radius"><i class="fa fa-facebook-square fa-2"></i></span>
+        </div>
+        <div class="small-8 columns">
+          <input type="text" name='status' placeholder="What's on your mind? (Tip: try reloading/closing the page after typing...)" />
+        </div>
+        <div class="small-2 columns">
+          <input type='button' value='Post' id='save-fb' class="button postfix radius" />
+        </div>
+      </div>
+      <div id='fb-panel' class='small-6 small-centered columns'></div>
+    </form>
+  </section>
+  <h4><strong>Did you know?</strong> Forms are among the most used components on the web</h4>
+</main>
+<footer></footer>
+<script src="js/jquery.js"></script>
+<script src="js/lookup.js"></script>
+<script>
+$(document).ready(function(){
+  simpleForm = $('#simple'),
+  moreForm = $('#more'),
+  fbForm = $('#fb');
+
+  simpleForm.lookUp({
+    msg: "You have modified one or more fields.\nSave before submitting.\nContinue?"
+  });
+
+  $('#save-simple').click(function(){
+    simpleForm.lookUp_save();
+  });
+
+  simpleForm.submit(function(e){
+    e.preventDefault();
+    if (!$(this).find(':input').lookUp_isChanged()) {
+      $('#simple-panel')
+      .text($("[name='f1']").val() +' '+$("[name='f2']").val())
+      .fadeIn(1000).fadeOut(5000)
+      .addClass('panel');
+    }
+    else{
+      $('#simple-panel')
+      .text('You should have saved!')
+      .fadeIn(1000).fadeOut(5000)
+      .addClass('panel');
+    }
+  });
+
+  moreForm.lookUp({
+    changeClass: 'more-changed'
+  });
+
+  moreForm.submit(function(e){
+    e.preventDefault();
+    $('#more-panel').text('Data submitted!').fadeIn(1000).fadeOut(5000).addClass('panel');
+  });
+
+
+  fbForm.lookUp({
+    windowEvent: true
+  });
+
+  $('#save-fb').click(function(){
+    $('#fb-panel').text($("[name='status']").val()).fadeIn(1000).fadeOut(5000).addClass('panel');
+    $("[name='status']").val('');
+  });
+});
+</script>
+</body>
 </html>

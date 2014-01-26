@@ -1,0 +1,81 @@
+body{
+	margin: 1em auto;
+	background-color: #ffe;
+}
+
+.fa-1,.fa-2,.fa-3,.fa-4,.fa-5,.fa-6{margin-right:.07142857142857142em}
+
+.fa-2{font-size:2em}
+.fa-3{font-size:4em}
+.fa-4{font-size:7em}
+.fa-5{font-size:12em}
+.fa-6{font-size:20em}
+
+.prefix .fa, .postfix .fa{
+	margin: 0 auto;
+	margin-top:.1625em;
+}
+
+#logo, strong{
+	color:#f80;
+}
+
+#logo,h1,h2,h3,h4,h5{
+	font-weight: 400 !important;
+}
+
+
+#logo,h1,h2,h3,h4,h5,p,.panel{
+	text-align: center;
+}
+
+
+h1,h2,h3,h4,h5,p{
+	color: #555;
+}
+
+section{
+	padding-left:.9375rem;
+	padding-right:.9375rem;
+}
+
+header+main{
+	margin-bottom: 0;
+}
+
+header,#how{
+	padding-top:.9375rem;
+	padding-bottom:.9375rem;
+}
+
+#what{
+	background: url('../img/pic.jpg') repeat scroll 57% 55% transparent;
+	padding-top:2.9375rem;
+	padding-bottom:2.9375rem;
+}
+
+#what p{
+	font-size: 1.2rem;
+}
+
+#simple .changed {
+	color: #b94a48 !important;
+	background-color: #f2dede !important;
+	border-color: #eed3d7 !important;
+}
+
+#simple-panel{
+	padding: 16px 5px;
+}
+
+.more-changed{
+	color:#31708f !important;
+	background-color:#d9edf7 !important;
+	border-color:#bce8f1 !important;
+}
+
+
+button{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
