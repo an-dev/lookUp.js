@@ -1,4 +1,4 @@
-[lookUp.js](#)
+[lookUp.js](http://an-dev.github.io/lookUp.js/)
 ==========================
 
 This jQuery plugin is used to control various element in a form. When the end user changes values of input elements, the plugin shows which element where changed, and alerts the user that he has to submit the changes before doing other actions (e.g.: move out of the page)
@@ -78,8 +78,7 @@ $(document).ready(function(){
 }); 
 ```
 
-## Demo ##
+## [Demo](http://an-dev.github.io/lookUp.js/) ##
 
-* [coming soon](#)
 
 
