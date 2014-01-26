@@ -60,8 +60,8 @@
           <div class="row">
             <div id='simple-panel' class='large-9 small-6 columns'></div>
             <div class='large-3 small-6 right columns'>
-              <input type='button' value='Save' id='save-simple' class="button radius small-12 large-5" />
-              <input type='submit' value='Submit' class="button radius small-12 large-6 right" />
+              <input type='button' value='Save' id='save-simple' class="button secondary radius small-12 large-5" />
+              <input type='submit' value='Submit' class="button secondary radius small-12 large-6 right" />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@
           <label for="checkbox2">Triples</label>
         </div>
         <div class='large-5 small-12 columns'>
-          <input type='submit' value='Submit' class="button radius small-6 large-6 right" />
+          <input type='submit' value='Submit' class="button secondary radius small-6 large-6 right" />
           <div id='more-panel' class='small-5 large-5 columns'></div>
         </div>
       </div>        
@@ -124,23 +124,40 @@
   <section>
     <h4>Window Event enabled</h4>
     <form id='fb' method='post' action='index.html'>
+      <div class='row collapse'>
+        <p class="small-8 small-centered columns">
+          (Tip: try reloading/closing the page after typing...)
+        </p>
+      </div>
       <div class="row collapse">
         <div class="small-2 columns">
           <span class="prefix radius"><i class="fa fa-facebook-square fa-2"></i></span>
         </div>
         <div class="small-8 columns">
-          <input type="text" name='status' placeholder="What's on your mind? (Tip: try reloading/closing the page after typing...)" />
+          <input type="text" name='status' placeholder="What's on your mind?" />
         </div>
         <div class="small-2 columns">
-          <input type='button' value='Post' id='save-fb' class="button postfix radius" />
+          <input type='button' value='Post' id='save-fb' class="button postfix radius secondary" />
         </div>
+
       </div>
       <div id='fb-panel' class='small-6 small-centered columns'></div>
     </form>
   </section>
-  <h4><strong>Did you know?</strong> Forms are among the most used components on the web</h4>
 </main>
-<footer></footer>
+<hr />
+<footer class='row'>
+  <h4><strong>Did you know?</strong> Forms are among the most used components on the web</h4>
+  <div class='large-7 small-9 small-centered columns'>
+    <ul class="inline-list">
+      <li><a target='_blank' href="https://twitter.com/an_dev_"><i class="fa fa-twitter fa-2"></i></a></li>
+      <li><a target='_blank' href="https://github.com/an-dev/lookUp.js"><i class="fa fa-github fa-2"></i></a></li> 
+      <li><a target='_blank' href="http://www.linkedin.com/in/andyidiaghe"><i class="fa fa-linkedin fa-2"></i></a></li> 
+      <li><a target='_blank' href="mailto:andy.idiaghe at gmail.com"><i class="fa fa-envelope fa-2"></i></a></li> 
+      <li><a id='dtsp' target='_blank' href="http://deathtothestockphoto.com/">Demo Image: Death to Stock Photo</a></li> 
+    </ul>
+  </div>
+</footer>
 <script src="js/jquery.js"></script>
 <script src="js/lookup.js"></script>
 <script>

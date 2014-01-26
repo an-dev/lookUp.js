@@ -16,8 +16,17 @@ body{
 	margin-top:.1625em;
 }
 
-#logo, strong{
+#logo, strong,a{
 	color:#f80;
+}
+
+a:hover, a:focus{
+	color: #f90;
+	-webkit-transition: color 300ms ease-in-out;
+	-moz-transition: color 300ms ease-in-out;
+	-ms-transition: color 300ms ease-in-out;
+	-o-transition: color 300ms ease-in-out;
+	transition: color 300ms ease-in-out;
 }
 
 #logo,h1,h2,h3,h4,h5{
@@ -66,6 +75,8 @@ header,#how{
 
 #simple-panel{
 	padding: 16px 5px;
+	min-height: 58px;
+	max-height: 58px;
 }
 
 .more-changed{
@@ -78,4 +89,16 @@ header,#how{
 button{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+}
+
+footer{
+	margin:3.5rem auto !important;
+}
+
+footer ul{
+	margin-top: 2rem !important;
+}
+
+#dtsp{
+	font-size: 1.3rem;
 }
