@@ -5,9 +5,10 @@ This jQuery plugin is used to control various element in a form. When the end us
 
 Tested in Firefox 4+, Google Chrome 10+, Safari 5+, Internet Explorer 8+.
 
-## Version 1.1 ##
+## Changelog ##
 
-Fixed bug in windowEvent: now the plugin catches changes in the form without needing to submit data at first
+v0.1
+-   Fixed bug in windowEvent: now the plugin catches changes in the form without needing to submit data at first
 
 
 ## Usage ##
